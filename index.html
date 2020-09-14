@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
+      integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="CheckData.js"></script>
+  </head>
+  <body>
+    <h1>Simple SOCcer File Check...</h1>
+    This is run on your machine, so no data is uploaded to a server. This program will remove unwanted new-line character from your
+    input data. After submiting the file, you will have a csv file downloaded from your browsersto your computer (again it never
+    really left your computer)
+    <div style="padding: 10px">
+      <form id="SOCcerFileCheck">
+        <input id="inputFile" type="file" accept=".csv" />
+        <input id="submitButton" type="submit" />
+      </form>
+    </div>
+    <div style="padding: 10px" id="error_out">
+      Errors:
+      <ol id="error_list"></ol>
+    </div>
+  </body>
+</html>
